@@ -1,213 +1,145 @@
-/* 共通 */
-* {
-    margin: 0px;
-    padding: 0px;
+
+@charset "UTF-8";
+/*----------------------------
+  共通
+-----------------------------*/
+
+.h5 {
+    line-height: 1.8rem;
 }
-body {
-	height:600px;
-	width:100%;
-	margin-left: auto;
-}
-a {
-	text-decoration: none ;
-	color:#ffffff;
-}
-ul{
-	list-style: none;
+.border-w3 { 
+    border-left-width: 3px !important;
+    border-left-color: #262626 !important;
 }
 
-dl{
+/* ====== カラー指定 ====== */
+.brand-color {
+	color: #21386E !important;
+}
+.bg-brand-color {
+	background-color: #21386E !important;
+}
+/* ====== GLOVAL NAV ====== */
+.gloval-nav {
+	height: 10%;
+}
+.navbar-white a {
+	color: #fff;
+}
+/* ====== FOOTER ====== */
+.footer-logo {
+	width: 20%;
+}
+.social img {
+	width: 36px;
+	height: 36px;
+}
+footer {
+	padding-bottom: 5%;
+}
+.time-border {
+   border-top: 3px solid #262626;
+    border-right: 3px solid #262626;
+    margin-left: 24px;
+    padding-bottom: 3rem;
+    padding-right: 5rem;
+    width: 43%;
+}
+/* ====== BREADCRUMB LIST ====== */
+.breadcrumb-list, .breadcrumb-list li {
+	background-color: #21386E;
+}
+/*----------------------------
+  SP TOGGLE NAV
+-----------------------------*/
+.nav-scroller {
+	position: relative;
+	z-index: 2;
+	height: 2.75rem;
+	overflow-y: hidden;
+}
+.nav-scroller .nav {
+	display: -ms-flexbox;
 	display: flex;
-	margin-right:30px;
-}
-dt{
-	display: flex;
-	margin-right: 30px;
-	margin-left:30px;
-}
-dt::after{
-	
-}
-dd{
-	display: flex;
-}
-p{
-	margin-left:30px;
-	margin-bottom:30px;
-}
-
-table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
-    color: black;
-
-}
-/*トップページ*/
-.header{
-	background-color:#87cefa;
-	color:#ffffff;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	overflow-x: auto;
+	color: rgba(255, 255, 255, 0.75);
 	text-align: center;
-	width:100%;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+.nav-underline .nav-link {
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	font-size: .875rem;
+	color: #6c757d;
+}
+.nav-underline .nav-link:hover {
+	color: #007bff;
+}
+.nav-underline .active {
+	font-weight: 500;
+	color: #343a40;
 }
 
-
-.tab{
-	display: flex;
-	flex-direction:row;
-	background-color:#2b2b2b;
-	margin-bottom: 30px;
-	border-bottom:1px solid #a9a9a9;
-
-}
-
-.tab :hover{
-	color: gray;
-
-}
-
-.tab1{
-	padding:10px;
-	margin-right:0px;
-	margin-bottom: 0px;
-	margin-left:0px;
-	margin-top:0px;
-	font-size: 30px;
-	text-decoration: none;
-	display: block;
-	background-color:#2b2b2b;
-	border:2px solid #b0c4de;
-	width:100px;
-	text-align:center;
-	color:#ffffff;
-
-/*	background-color: red; */
-
-  
-}
-
-.tab2{
-padding:10px;
-	margin-right:0px;
-	margin-bottom: 0px;
-	margin-left:0px;
-	margin-top:0px;
-	font-size: 30px;
-	text-decoration: none;
-	display: block;
-	background-color:#2b2b2b;
-	border:2px solid #b0c4de;
-	width:100px;
-	text-align:center;
-	color:#ffffff;
-}
-
-.tab3{
-	padding:10px;
-	margin-right:0px;
-	margin-bottom: 0px;
-	margin-left:0px;
-	margin-top:0px;
-	font-size: 30px;
-	text-decoration: none;
-	display: block;
-	background-color:#2b2b2b;
-	border:2px solid #b0c4de;
-	width:100px;
-	text-align:center;
-	color:#ffffff;
-
-}
-.tab4{
-	padding:10px;
-	margin-right:10px;
-	margin-bottom: 0px;
-	margin-left:0px;
-	margin-top:0px;
-	font-size: 30px;
-	text-decoration: none;
-	display: block;
-	background-color:#2b2b2b;
-	border:2px solid #b0c4de;
-	width:100px;
-	text-align:center;
-	color:#ffffff;
-}
-
-.kousin{
-	background-color:#87cefa;
-	color:#ffffff;
-	border-radius: 100px;
-	text-align: center;
-	width:50%;
-	margin-bottom:20px;
-	margin-left:30px;
-}
-
-.footer{
-	font-size:20px;
-	height: 30px;
-	background-color:white;
-	bottom:0px;
-	position: fixed;
-	width:100%;
-	text-align: center;
-	background-color:#a9a9a9;
-	color:#ffffff; 
-}
-
-/*趣味ページ*/
-
-.ta1, .ta1 td ,.ta1 th {
-	border:1px solid #ccc;
-	padding:10px 15px;
-	margin-right:30px;
-	
+/*----------------------------
+  TOP ページ
+-----------------------------*/
+/* ====== TOP IMAGE ====== */
+header .top_img {
+	background-image: url(../img/bg-top.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
 	
 }
 
-.ta1 th.tamidashi {
-    text-align: center;
-    font-size: 18px;
-    background: #fafafa;
-}
-
-.ta1{
-	width:50%;
-	margin-left:30px;
+/* END */
+/* 小デバイス（横向きモバイル, 768px 未満）
+==============================================*/
+@media screen and (max-width: 767.98px) {
+	.logo {
+		width: 80%;
 	}
-.ta1 a{
-	color:black;
-}
-
-.ta1 a :hover{
-	color:gray;
-}
-
-
-/*日記*/
-.nikki h2{
-	background-color:#87cefa;
-	width:50%;
-	margin-bottom: 20px;
-    color: #fff;
-	border-radius: 100px;
-	text-align: center;
-	margin-left:40px;
-}
-
-.nikki h3{	
-	margin-left:30px;
-	background-color:#ffffff;
-	width:50%;
-	margin-bottom: 20px;
-	border-radius: 200px;
-	border:1px solid;
-	padding-left: 20px;
-}
-
-
-
-
-
+	.display-3 {
+		font-size: 3rem;
+	}
+	.footer-logo {
+		width: 80%;
+	}
+	.navbar-nav .border-left {
+		border-left: none !important;
+	}
+	.navbar-nav .border-right {
+		border-right: none !important;
+	}
+	footer {
+		padding-bottom: 5%;
+	}
+	
+	/* END */
+	/* 極小デバイス（縦向きモバイル, 576px 未満）
+	==============================================*/
+	@media screen and (max-width: 575.98px) {
+	header .catch {
+		bottom: 10%;
+	}
+	header .catch .h1 {
+		font-size: 2rem;
+	}
+	header .catch h2 {
+		font-size: 1rem;
+	}
+	.schedule-img {
+		width: 100%;
+	}
+	form .border-top,
+		form .border-bottom {
+			border: none !important;
+		}    
+	}
+	/* END */
+	
